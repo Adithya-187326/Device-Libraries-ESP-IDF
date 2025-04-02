@@ -1,0 +1,14 @@
+idf_component_register(
+    SRCS 
+        "src/as5510.c"
+        "src/helpers_as5510.c"
+    INCLUDE_DIRS
+        "."
+        "include"
+    REQUIRES
+        log
+        esp_driver_i2c
+        esp_driver_gpio
+        esp_common
+        freertos
+)
