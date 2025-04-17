@@ -20,10 +20,14 @@ You can add this to component folder to your project's working directory work wi
 └── README.md
 ```
 
-# SAMPLE CODE
+# ADDING THE COMPONENT
 
-This code demonstrates how to initialize necessary structs to work with the BNO055 component. The verbosity can be adjusted to get raw sensor outputs or manually fused IMU data as follows
+Add one line of code in the CMakeLists.txt in the project folder (not the main folder), to add an extra component directory. It is really crucial that the order of the statements is not missed as it can lead to CMake errors.
 
 ```C
+cmake_minimum_required(VERSION 3.16)
 
+set(EXTRA_COMPONENT_DIRS "components/AS5600")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(oled-display)
 ```

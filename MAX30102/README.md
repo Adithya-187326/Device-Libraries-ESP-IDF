@@ -19,3 +19,15 @@ You can add this to component folder to your project's working directory work wi
 │   └── main.c
 └── README.md
 ```
+
+# ADDING THE COMPONENT
+
+Add one line of code in the CMakeLists.txt in the project folder (not the main folder), to add an extra component directory. It is really crucial that the order of the statements is not missed as it can lead to CMake errors.
+
+```C
+cmake_minimum_required(VERSION 3.16)
+
+set(EXTRA_COMPONENT_DIRS "components/MAX30102")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(project-name)
+```

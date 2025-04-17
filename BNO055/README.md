@@ -24,6 +24,18 @@ You can add this to component folder to your project's working directory work wi
 └── README.md
 ```
 
+# ADDING THE COMPONENT
+
+Add one line of code in the CMakeLists.txt in the project folder (not the main folder), to add an extra component directory. It is really crucial that the order of the statements is not missed as it can lead to CMake errors.
+
+```C
+cmake_minimum_required(VERSION 3.16)
+
+set(EXTRA_COMPONENT_DIRS "components/BNO055")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(project-name)
+```
+
 # SAMPLE CODE
 
 This code demonstrates how to initialize necessary structs to work with the BNO055 component. The verbosity can be adjusted to get raw sensor/config outputs
