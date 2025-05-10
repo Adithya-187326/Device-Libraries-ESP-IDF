@@ -9,7 +9,7 @@ You can add this to component folder to your project's working directory work wi
 ```
 ├── CMakeLists.txt
 ├── components
-|   ├── MAX30102
+|   ├── MAX6675
 |   |   ├── CMakeLists.txt
 |   |   ├── include
 |   |   ├── src
