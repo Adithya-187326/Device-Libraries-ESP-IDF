@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the following metadata."
+title: "idf-external-hw-drivers"
+authors:
+  - family-names: Venkata Narayanan
+    given-names: Adithya
+date-released: 2024-01-01
+version: 1.0.0
+license: MIT
+url: https://github.com/Adithya-187326/idf-external-hw-drivers
+repository-code: https://github.com/Adithya-187326/idf-external-hw-drivers
+# doi: 10.5281/zenodo.
